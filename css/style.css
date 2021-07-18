@@ -1,0 +1,935 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+/*laptops/escritorio*/
+.header .header__div {
+  width: 10%;
+  padding: 2px;
+  display: inline-block; }
+
+.header--activo {
+  width: 80; }
+
+.header .header__nav .header__item {
+  display: flex;
+  justify-content: flex-end;
+  color: #d0ceec;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+  font-size: 15px; }
+
+.header .header__nav .header__nav .header__item a:hover {
+  background-color: #f2ae72; }
+
+.header .header__nav .header__nav .header__item > li {
+  float: left; }
+
+.header .header__nav .header__nav .header__item li ul {
+  display: none;
+  position: absolute;
+  min-width: 140px; }
+
+.header .header__nav .header__nav .header__item li:hover > ul {
+  display: block; }
+
+@media only screen and (min-width: 992px) {
+  .body {
+    background-image: url(/imagenes/casa3editada.jfif); }
+  body {
+    background-color: #f2ae72;
+    font-style: normal;
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: 'Prompt', sans-serif;
+    font-family: "Lato";
+    text-align: justify;
+    line-height: 20px;
+    letter-spacing: 3px;
+    font-style: normal;
+    font-weight: bolder;
+    font-family: 'Prompt', sans-serif;
+    text-align: justify;
+    line-height: 20px;
+    letter-spacing: 3px; }
+  .card {
+    background-color: #ceaa8ee3;
+    border-radius: 3px;
+    margin-bottom: 5px; }
+  /*INDEX*/
+  header {
+    background-color: #36486b;
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0; }
+  .contenedor-izquierda {
+    width: 10%;
+    padding: 2px;
+    display: inline-block; }
+  .section {
+    background-image: linear-gradient(to right, rgba(8, 7, 7, 0), black), url(/imagenes/1E3.jpg);
+    height: 800px;
+    width: 100%;
+    border: 2px solid black;
+    margin-bottom: 2%; }
+    .section .section__main {
+      width: 100%;
+      font-size: 30px;
+      text-align: center;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      font-weight: bolder;
+      font-family: 'Prompt', sans-serif; }
+    .section .section__main h1 {
+      margin: 5%;
+      color: #f2ae72;
+      font-size: 40px;
+      font-weight: bold; }
+    .section .section__main p {
+      margin: 5%;
+      color: cornsilk; }
+  .padding {
+    padding: 1rem; }
+  .TituloUno {
+    color: #242021;
+    margin: 5%;
+    font-weight: bold; }
+  /*NAV*/
+  li {
+    display: flex; }
+  ul, ol {
+    list-style: none; }
+  nav {
+    color: black;
+    display: flex;
+    justify-content: flex-end; }
+  .barra li a {
+    display: flex;
+    justify-content: flex-end;
+    color: #d0ceec;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    font-size: 15px; }
+  .barra li a:hover {
+    background-color: #f2ae72; }
+  .barra > li {
+    float: left; }
+  .barra li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px; }
+  .barra li:hover > ul {
+    display: block; }
+  .img {
+    width: 100%; }
+  h2 {
+    margin-bottom: 0.5em; }
+  /*NOSOTROS*/
+  .sectionNosotros {
+    background-image: linear-gradient(to left, rgba(8, 7, 7, 0), black), url(/imagenes/1D.jpg);
+    height: 800px;
+    width: 100%;
+    border: 2px solid black;
+    margin-bottom: 2%;
+    display: flex;
+    align-items: center; }
+    .sectionNosotros .mainServicios__contenidoProducto {
+      margin: 5px; }
+    .sectionNosotros .sectionNosotros_p {
+      color: #f7f0f0;
+      font-size: medium;
+      text-align: justify;
+      line-height: 1, 4rem;
+      margin: 10px; }
+    .sectionNosotros .sectionNosotros__titulo {
+      color: white;
+      font-size: 3rem;
+      text-align: center;
+      padding: 1rem;
+      margin-bottom: 10px; }
+    .sectionNosotros #sectionNosotros__main {
+      text-align: center;
+      padding: 5%;
+      margin: 2%;
+      font-weight: bold;
+      background-color: rgba(7, 7, 7, 0.4);
+      border: 1px solid black;
+      opacity: 0.8;
+      filter: alpha(opacity=60);
+      height: 20%; }
+    .sectionNosotros .sectionNosotros_main p {
+      color: white;
+      font-size: medium;
+      text-align: center; }
+  main {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+  /*SERVICIOS*/
+  .mainServicios {
+    background-image: url(/imagenes/casa3.jfif); }
+    .mainServicios .mainServicios__tituloProducto {
+      color: #36486b;
+      font-size: 30px;
+      text-align: center;
+      background-position: center center;
+      background-size: cover; }
+    .mainServicios .mainServicios__contenedorCards {
+      padding: 16px;
+      display: grid;
+      border-radius: 20px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas: "articuloUno articuloTres articuloCinco" "articuloDos articuloCuatro producto";
+      grid-column-gap: 15px;
+      grid-row-gap: 15px; }
+    .mainServicios .mainServicios__cardProducto {
+      background-color: #fbfbfb;
+      border: 1px solid black;
+      margin: 16px; }
+    .mainServicios__cardProducto .mainServicios__tituloProducto {
+      padding-bottom: 8px;
+      line-height: 25px;
+      color: #f2ae72; }
+    .mainServicios .mainServicios__contenidoProducto {
+      font-size: 20px;
+      text-decoration: none;
+      margin: 5px; }
+  /*CONTACTO*/
+  .contact_form {
+    background-color: #90939988;
+    width: 460px;
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 30px; }
+  input {
+    background-color: #fbfbfb;
+    width: 408px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #f2ae72;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px; }
+  textarea {
+    background-color: #fbfbfb;
+    width: 405px;
+    height: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #f2ae72;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px; }
+  label {
+    display: block;
+    float: center; }
+  button {
+    height: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    background-color: #36486b;
+    border-color: #36486b;
+    border-style: solid;
+    border-radius: 10px;
+    width: 420px;
+    cursor: pointer; }
+  button p {
+    color: #fff; }
+  span {
+    color: #36486b; }
+  h1 {
+    font-size: 39px;
+    text-align: center;
+    padding-bottom: 20px;
+    color: black; }
+  h3 {
+    font-size: 16px;
+    padding-bottom: 30px;
+    color: black; }
+  p {
+    font-size: 14px;
+    color: #0e0e0e; }
+  ::-webkit-input-placeholder {
+    color: #a8a8a8; }
+  ::-webkit-textarea-placeholder {
+    color: #a8a8a8; }
+  .formulario input:focus {
+    outline: 0;
+    border: 1px solid #f2ae72; }
+  .formulario textarea:focus {
+    outline: 0;
+    border: 1px solid #f2ae72; }
+  .videoRealidad {
+    top: 30px;
+    left: 30px;
+    width: 50%;
+    height: 50%;
+    border: 10; }
+  /*FOOTER*/
+  footer {
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #36486b;
+    width: 100%; }
+  /*TRABAJOS*/
+  .sectionTrabajos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+  .cuadrosVideo {
+    margin: 1rem; }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em; }
+  .location-listing {
+    position: relative; }
+  .location-image {
+    line-height: 0;
+    overflow: hidden; }
+  .location-image img {
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+    transform: scale(1.1); }
+  .location-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+    background: #36486b31;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .location-listing:hover .location-title {
+    opacity: 1; }
+  .location-listing:hover .location-image img {
+    filter: blur(2px); }
+  .tituloTrabajo {
+    margin: 5%;
+    color: #36486b;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center; }
+  a {
+    color: black;
+    text-decoration: none; } }
+
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+  .body {
+    background-image: url(/imagenes/casa3editada.jfif); }
+  body {
+    background-color: #f2ae72;
+    font-style: normal;
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: 'Prompt', sans-serif;
+    font-family: "Lato";
+    text-align: justify;
+    line-height: 20px;
+    letter-spacing: 3px;
+    font-style: normal;
+    font-weight: bolder;
+    font-family: 'Prompt', sans-serif;
+    text-align: justify;
+    line-height: 20px;
+    letter-spacing: 3px; }
+  /*INDEX*/
+  header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "articuloUno";
+    background-color: #36486b; }
+  .contenedor-izquierda {
+    width: 10%;
+    padding: 2px;
+    display: inline-block; }
+  .section {
+    background-image: linear-gradient(to right, rgba(8, 7, 7, 0), black), url(/imagenes/1E3.jpg);
+    height: 800px;
+    width: 100%;
+    border: 2px solid black;
+    margin-bottom: 2%; }
+    .section .section__main {
+      line-height: 35px;
+      font-size: 30px;
+      text-align: center;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      font-weight: bolder;
+      font-family: 'Prompt', sans-serif; }
+    .section .section__main h1 {
+      margin: 5%;
+      color: #f2ae72;
+      font-size: 40px;
+      font-weight: bold; }
+    .section .section__main p {
+      margin: 5%;
+      color: cornsilk; }
+  .padding {
+    padding: 1rem; }
+  .TituloUno {
+    color: #242021;
+    margin: 5%;
+    font-weight: bold; }
+  /*NAV*/
+  li {
+    display: flex; }
+  ul, ol {
+    list-style: none; }
+  nav {
+    color: black;
+    display: flex;
+    justify-content: flex-end; }
+  .barra li a {
+    display: flex;
+    justify-content: flex-end;
+    color: #d0ceec;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    font-size: 15px; }
+  .barra li a:hover {
+    background-color: #f2ae72; }
+  .barra > li {
+    float: left; }
+  .barra li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px; }
+  .barra li:hover > ul {
+    display: block; }
+  .img {
+    width: 100%; }
+  h2 {
+    margin-bottom: 0.5em; }
+  /*NOSOTROS*/
+  .sectionNosotros {
+    background-image: linear-gradient(to left, rgba(8, 7, 7, 0), black), url(/imagenes/1D.jpg);
+    height: 800px;
+    width: 100%;
+    border: 2px solid black;
+    margin-bottom: 2%;
+    display: flex;
+    align-items: center; }
+  .sectionNosotros .sectionNosotros_p {
+    color: white;
+    font-size: medium;
+    text-align: justify;
+    line-height: 1, 4rem; }
+  .sectionNosotros .sectionNosotros__titulo {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem; }
+  .sectionNosotros #sectionNosotros__main {
+    text-align: center;
+    padding: 5%;
+    margin: 2%;
+    font-weight: bold;
+    background-color: rgba(7, 7, 7, 0.4);
+    border: 1px solid black;
+    opacity: 0.8;
+    filter: alpha(opacity=60);
+    height: 20%; }
+  .sectionNosotros .sectionNosotros_main p {
+    color: white;
+    font-size: medium;
+    text-align: center; }
+  main {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+  /*SERVICIOS*/
+  .mainServicios {
+    background-image: url(/imagenes/casa3.jfif);
+    display: grid;
+    justify-items: center;
+    align-items: center; }
+    .mainServicios .mainServicios__tituloProducto {
+      color: #36486b;
+      font-size: 30px;
+      text-align: center;
+      background-position: center center;
+      background-size: cover; }
+    .mainServicios .mainServicios__contenedorCards {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas: "articuloUno" "articuloTres" "articuloCinco" "articuloDos" "articuloCuatro" "producto"; }
+    .mainServicios .mainServicios__cardProducto {
+      background-color: #fbfbfb;
+      border: 1px solid black;
+      margin: 16px; }
+    .mainServicios__cardProducto .mainServicios__tituloProducto {
+      padding-bottom: 8px;
+      color: #f2ae72; }
+    .mainServicios .mainServicios__contenidoProducto {
+      font-size: 20px;
+      text-decoration: none;
+      line-height: 25px; }
+  /*CONTACTO*/
+  .contact_form {
+    background-color: #90939988;
+    width: 460px;
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 30px; }
+  input {
+    background-color: #fbfbfb;
+    width: 408px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: coral;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px; }
+  textarea {
+    background-color: #fbfbfb;
+    width: 405px;
+    height: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #f2ae72;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px; }
+  label {
+    display: block;
+    float: center; }
+  button {
+    height: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    background-color: #36486b;
+    border-color: #36486b;
+    border-style: solid;
+    border-radius: 10px;
+    width: 420px;
+    cursor: pointer; }
+  button p {
+    color: #fff; }
+  span {
+    color: #36486b; }
+  h1 {
+    font-size: 39px;
+    text-align: center;
+    padding-bottom: 20px;
+    color: black; }
+  h3 {
+    font-size: 16px;
+    padding-bottom: 30px;
+    color: #0e0e0e; }
+  p {
+    font-size: 14px;
+    color: #0e0e0e; }
+  ::-webkit-input-placeholder {
+    color: #a8a8a8; }
+  ::-webkit-textarea-placeholder {
+    color: #a8a8a8; }
+  .formulario input:focus {
+    outline: 0;
+    border: 1px solid #f2ae72; }
+  .formulario textarea:focus {
+    outline: 0;
+    border: 1px solid #f2ae72; }
+  .videoRealidad {
+    top: 30px;
+    left: 30px;
+    width: 50%;
+    height: 50%;
+    border: 10; }
+  /*FOOTER*/
+  footer {
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #36486b;
+    width: 100%; }
+  /*TRABAJOS*/
+  .sectionTrabajos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+  .cuadrosVideo {
+    margin: 1rem; }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+    margin: 40px; }
+  .location-listing {
+    position: relative; }
+  .location-image {
+    line-height: 0;
+    overflow: hidden; }
+  .location-image img {
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+    transform: scale(1.1); }
+  .location-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+    background: #36486b31;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .location-listing:hover .location-title {
+    opacity: 1; }
+  .location-listing:hover .location-image img {
+    filter: blur(2px); }
+  .tituloTrabajo {
+    margin: 5%;
+    color: #36486b;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center; }
+  a {
+    color: black;
+    text-decoration: none; } }
+
+@media only screen and (max-width: 600px) {
+  .body {
+    background-image: url(/imagenes/casa3editada.jfif); }
+  body {
+    background-color: #f2ae72;
+    font-style: normal;
+    font-size: 15px;
+    font-weight: bolder;
+    font-family: 'Prompt', sans-serif;
+    font-family: "Lato";
+    text-align: justify;
+    line-height: 20px;
+    letter-spacing: 3px;
+    font-style: normal;
+    font-weight: bolder;
+    font-family: 'Prompt', sans-serif;
+    text-align: justify;
+    line-height: 20px;
+    letter-spacing: 3px; }
+  /*INDEX*/
+  header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "articuloUno";
+    background-color: #36486b; }
+  .contenedor-izquierda {
+    width: 10%;
+    padding: 2px;
+    display: inline-block; }
+  .section {
+    background-image: linear-gradient(to right, rgba(8, 7, 7, 0), black), url(/imagenes/1E3.jpg);
+    height: 800px;
+    width: 100%;
+    border: 2px solid black;
+    margin-bottom: 2%; }
+    .section .section__main {
+      font-size: 30px;
+      text-align: center;
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      font-weight: bolder;
+      font-family: 'Prompt', sans-serif; }
+    .section .section__main h1 {
+      margin: 5%;
+      color: #f2ae72;
+      font-size: 40px;
+      font-weight: bold; }
+    .section .section__main p {
+      margin: 5%;
+      color: cornsilk;
+      line-height: 35px; }
+  .padding {
+    padding: 1rem; }
+  .TituloUno {
+    color: #242021;
+    margin: 5%;
+    font-weight: bold; }
+  /*NAV*/
+  li {
+    display: flex; }
+  ul, ol {
+    list-style: none; }
+  nav {
+    color: black;
+    display: flex;
+    justify-content: flex-end; }
+  .barra li a {
+    display: flex;
+    justify-content: flex-end;
+    color: #d0ceec;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    font-size: 15px; }
+  .barra li a:hover {
+    background-color: #f2ae72; }
+  .barra > li {
+    float: left; }
+  .barra li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px; }
+  .barra li:hover > ul {
+    display: block; }
+  .img {
+    width: 100%; }
+  h2 {
+    margin-bottom: 0.5em; }
+  /*NOSOTROS*/
+  .sectionNosotros {
+    background-image: linear-gradient(to left, rgba(8, 7, 7, 0), black), url(/imagenes/1D.jpg);
+    height: 800px;
+    width: 100%;
+    border: 2px solid black;
+    margin-bottom: 2%;
+    display: flex;
+    align-items: center; }
+  .sectionNosotros .sectionNosotros_p {
+    color: white;
+    font-size: medium;
+    text-align: justify;
+    line-height: 1, 4rem; }
+  .sectionNosotros .sectionNosotros__titulo {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem; }
+  .sectionNosotros #sectionNosotros__main {
+    text-align: center;
+    padding: 5%;
+    margin: 2%;
+    font-weight: bold;
+    background-color: rgba(7, 7, 7, 0.4);
+    border: 1px solid black;
+    opacity: 0.8;
+    filter: alpha(opacity=60);
+    height: 20%; }
+  .sectionNosotros .sectionNosotros_main p {
+    color: white;
+    font-size: medium;
+    text-align: center; }
+  main {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+  /*SERVICIOS*/
+  .mainServicios {
+    background-image: url(/imagenes/casa3.jfif);
+    display: grid;
+    justify-items: center;
+    align-items: center; }
+    .mainServicios .mainServicios__tituloProducto {
+      color: #36486b;
+      font-size: 30px;
+      text-align: center;
+      background-position: center center;
+      background-size: cover;
+      line-height: 25px; }
+    .mainServicios .mainServicios__contenedorCards {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas: "articuloUno" "articuloTres" "articuloCinco" "articuloDos" "articuloCuatro" "producto"; }
+    .mainServicios .mainServicios__cardProducto {
+      background-color: #fbfbfb;
+      border: 1px solid black;
+      margin: 16px; }
+    .mainServicios__cardProducto .mainServicios__tituloProducto {
+      padding-bottom: 8px;
+      color: #f2ae72; }
+    .mainServicios .mainServicios__contenidoProducto {
+      font-size: 20px;
+      text-decoration: none;
+      line-height: 25px; }
+  /*CONTACTO*/
+  .contact_form {
+    background-color: #90939988;
+    width: 460px;
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 30px; }
+  input {
+    background-color: #fbfbfb;
+    width: 408px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: coral;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px; }
+  textarea {
+    background-color: #fbfbfb;
+    width: 405px;
+    height: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #f2ae72;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px; }
+  label {
+    display: block;
+    float: center; }
+  button {
+    height: 45px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    background-color: #36486b;
+    border-color: #36486b;
+    border-style: solid;
+    border-radius: 10px;
+    width: 420px;
+    cursor: pointer; }
+  button p {
+    color: #fff; }
+  span {
+    color: #36486b; }
+  h1 {
+    font-size: 39px;
+    text-align: center;
+    padding-bottom: 20px;
+    color: black; }
+  h3 {
+    font-size: 16px;
+    padding-bottom: 30px;
+    color: #0e0e0e; }
+  p {
+    font-size: 14px;
+    color: #0e0e0e; }
+  ::-webkit-input-placeholder {
+    color: #a8a8a8; }
+  ::-webkit-textarea-placeholder {
+    color: #a8a8a8; }
+  .formulario input:focus {
+    outline: 0;
+    border: 1px solid #f2ae72; }
+  .formulario textarea:focus {
+    outline: 0;
+    border: 1px solid #f2ae72; }
+  .videoRealidad {
+    top: 30px;
+    left: 30px;
+    width: 50%;
+    height: 50%;
+    border: 10; }
+  /*FOOTER*/
+  footer {
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #36486b;
+    width: 100%; }
+  /*TRABAJOS*/
+  .sectionTrabajos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+  .cuadrosVideo {
+    margin: 1rem; }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+    margin: 25px; }
+  .location-listing {
+    position: relative; }
+  .location-image {
+    line-height: 0;
+    overflow: hidden; }
+  .location-image img {
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+    transform: scale(1.1); }
+  .location-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+    background: #36486b31;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .location-listing:hover .location-title {
+    opacity: 1; }
+  .location-listing:hover .location-image img {
+    filter: blur(2px); }
+  .tituloTrabajo {
+    margin: 5%;
+    color: #36486b;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center; }
+  a {
+    color: black;
+    text-decoration: none; } }

@@ -1,0 +1,10 @@
+nav .nav__lista {
+  list-style-type: none; }
+
+nav .nav__item {
+  color: white; }
+
+nav__link {
+  color: red; }
+  nav__link--activo {
+    background-color: green; }
