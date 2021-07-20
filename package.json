@@ -14,5 +14,13 @@
     "nodemon": "^2.0.12"
   },
   "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rociolamberti/repoProyecto.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rociolamberti/repoProyecto/issues"
+  },
+  "homepage": "https://github.com/rociolamberti/repoProyecto#readme",
   "description": ""
 }
