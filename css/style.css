@@ -36,7 +36,7 @@
 
 @media only screen and (min-width: 992px) {
   .body {
-    background-image: url(/imagenes/casa3editada.jfif); }
+    background-image: url(../imagenes/casa3editada.jfif); }
   body {
     background-color: #f2ae72;
     font-style: normal;
@@ -70,7 +70,7 @@
     padding: 2px;
     display: inline-block; }
   .section {
-    background-image: linear-gradient(to right, rgba(8, 7, 7, 0), black), url(/imagenes/1E3.jpg);
+    background-image: linear-gradient(to right, rgba(8, 7, 7, 0), black), url(../imagenes/1E3.jpg);
     height: 800px;
     width: 100%;
     border: 2px solid black;
@@ -132,7 +132,7 @@
     margin-bottom: 0.5em; }
   /*NOSOTROS*/
   .sectionNosotros {
-    background-image: linear-gradient(to left, rgba(8, 7, 7, 0), black), url(/imagenes/1D.jpg);
+    background-image: linear-gradient(to left, rgba(8, 7, 7, 0), black), url(../imagenes/1D.jpg);
     height: 800px;
     width: 100%;
     border: 2px solid black;
@@ -154,12 +154,12 @@
       padding: 1rem;
       margin-bottom: 10px; }
     .sectionNosotros #sectionNosotros__main {
+      background-color: rgba(7, 7, 7, 0.4);
+      border: 1px solid black;
       text-align: center;
       padding: 5%;
       margin: 2%;
       font-weight: bold;
-      background-color: rgba(7, 7, 7, 0.4);
-      border: 1px solid black;
       opacity: 0.8;
       filter: alpha(opacity=60);
       height: 20%; }
@@ -171,10 +171,12 @@
     padding: 16px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around; }
+    justify-content: space-around;
+    background-color: rgba(7, 7, 7, 0.4);
+    border: 1px solid black; }
   /*SERVICIOS*/
   .mainServicios {
-    background-image: url(/imagenes/casa3.jfif); }
+    background-image: url(../imagenes/casa3.jfif); }
     .mainServicios .mainServicios__tituloProducto {
       color: #36486b;
       font-size: 30px;
@@ -283,7 +285,6 @@
     border: 10; }
   /*FOOTER*/
   footer {
-    margin-bottom: 1%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -300,7 +301,8 @@
   .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 1em; }
+    grid-gap: 1em;
+    margin-left: 3%; }
   .location-listing {
     position: relative; }
   .location-image {
@@ -343,7 +345,7 @@
 
 @media only screen and (min-width: 600px) and (max-width: 992px) {
   .body {
-    background-image: url(/imagenes/casa3editada.jfif); }
+    background-image: url(../imagenes/casa3editada.jfif); }
   body {
     background-color: #f2ae72;
     font-style: normal;
@@ -371,12 +373,13 @@
     padding: 2px;
     display: inline-block; }
   .section {
-    background-image: linear-gradient(to right, rgba(8, 7, 7, 0), black), url(/imagenes/1E3.jpg);
+    background-image: linear-gradient(to right, rgba(8, 7, 7, 0), black), url(../imagenes/1E3.jpg);
     height: 800px;
     width: 100%;
     border: 2px solid black;
     margin-bottom: 2%; }
     .section .section__main {
+      width: 100%;
       line-height: 35px;
       font-size: 30px;
       text-align: center;
@@ -433,7 +436,7 @@
     margin-bottom: 0.5em; }
   /*NOSOTROS*/
   .sectionNosotros {
-    background-image: linear-gradient(to left, rgba(8, 7, 7, 0), black), url(/imagenes/1D.jpg);
+    background-image: linear-gradient(to left, rgba(8, 7, 7, 0), black), url(../imagenes/1D.jpg);
     height: 800px;
     width: 100%;
     border: 2px solid black;
@@ -468,10 +471,12 @@
     padding: 16px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around; }
+    justify-content: space-around;
+    background-color: rgba(7, 7, 7, 0.4);
+    border: 1px solid black; }
   /*SERVICIOS*/
   .mainServicios {
-    background-image: url(/imagenes/casa3.jfif);
+    background-image: url(../imagenes/casa3.jfif);
     display: grid;
     justify-items: center;
     align-items: center; }
@@ -639,7 +644,7 @@
 
 @media only screen and (max-width: 600px) {
   .body {
-    background-image: url(/imagenes/casa3editada.jfif); }
+    background-image: url(../imagenes/casa3editada.jfif); }
   body {
     background-color: #f2ae72;
     font-style: normal;
@@ -667,12 +672,13 @@
     padding: 2px;
     display: inline-block; }
   .section {
-    background-image: linear-gradient(to right, rgba(8, 7, 7, 0), black), url(/imagenes/1E3.jpg);
+    background-image: linear-gradient(to right, rgba(8, 7, 7, 0), black), url(../imagenes/1E3.jpg);
     height: 800px;
     width: 100%;
     border: 2px solid black;
     margin-bottom: 2%; }
     .section .section__main {
+      width: 100%;
       font-size: 30px;
       text-align: center;
       background-position: center center;
@@ -729,7 +735,7 @@
     margin-bottom: 0.5em; }
   /*NOSOTROS*/
   .sectionNosotros {
-    background-image: linear-gradient(to left, rgba(8, 7, 7, 0), black), url(/imagenes/1D.jpg);
+    background-image: linear-gradient(to left, rgba(8, 7, 7, 0), black), url(../imagenes/1D.jpg);
     height: 800px;
     width: 100%;
     border: 2px solid black;
@@ -767,7 +773,7 @@
     justify-content: space-around; }
   /*SERVICIOS*/
   .mainServicios {
-    background-image: url(/imagenes/casa3.jfif);
+    background-image: url(../imagenes/casa3.jfif);
     display: grid;
     justify-items: center;
     align-items: center; }
