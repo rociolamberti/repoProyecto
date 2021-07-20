@@ -65,7 +65,7 @@ $azul: #36486b;
 
 
 .body{
-background-image: url(/imagenes/casa3editada.jfif);
+background-image: url(../imagenes/casa3editada.jfif);
 }
 body{
   @include cuerpo(#f2ae72, 15px , 'Lato' )
@@ -101,7 +101,7 @@ header{
 }
 
 .section{
-  background-image: linear-gradient(to right, rgba(8, 7, 7, 0), rgb(0, 0, 0)), url(/imagenes/1E3.jpg);
+  background-image: linear-gradient(to right, rgba(8, 7, 7, 0), rgb(0, 0, 0)), url(../imagenes/1E3.jpg);
   height: 800px;
   width: 100%;
   border: 2px solid black;
@@ -193,7 +193,7 @@ h2 {
 /*NOSOTROS*/
 
 .sectionNosotros{
-background-image: linear-gradient(to left, rgba(8, 7, 7, 0), rgb(0, 0, 0)), url(/imagenes/1D.jpg);
+background-image: linear-gradient(to left, rgba(8, 7, 7, 0), rgb(0, 0, 0)), url(../imagenes/1D.jpg);
 height: 800px;
 width: 100%;
 border: 2px solid black;
@@ -507,7 +507,7 @@ a{
 @media only screen and (min-width: 600px) and (max-width: 992px){
 
 .body{
-  background-image: url(/imagenes/casa3editada.jfif);
+  background-image: url(../imagenes/casa3editada.jfif);
 }
 body{
   @include cuerpo(#f2ae72, 15px , 'Lato' )
@@ -534,7 +534,7 @@ body{
 }
 
 .section{
-    background-image: linear-gradient(to right, rgba(8, 7, 7, 0), rgb(0, 0, 0)), url(/imagenes/1E3.jpg);
+    background-image: linear-gradient(to right, rgba(8, 7, 7, 0), rgb(0, 0, 0)), url(../imagenes/1E3.jpg);
     height: 800px;
     width: 100%;
     border: 2px solid black;
@@ -627,7 +627,7 @@ nav{
 
 /*NOSOTROS*/
 .sectionNosotros {
-  background-image: linear-gradient(to left, rgba(8, 7, 7, 0), black), url(/imagenes/1D.jpg);
+  background-image: linear-gradient(to left, rgba(8, 7, 7, 0), black), url(../imagenes/1D.jpg);
   height: 800px;
   width: 100%;
   border: 2px solid black;
@@ -667,7 +667,7 @@ main {
   /*SERVICIOS*/
   
   .mainServicios{
-    background-image: url(/imagenes/casa3.jfif);  
+    background-image: url(../imagenes/casa3.jfif);  
     display: grid;
   justify-items: center;
   align-items: center;
@@ -916,7 +916,7 @@ a{
 
 @media only screen and ( max-width: 600px){
   .body{
-    background-image: url(/imagenes/casa3editada.jfif);
+    background-image: url(../imagenes/casa3editada.jfif);
   }
   
   body{
@@ -946,7 +946,7 @@ a{
   }
   
   .section{
-      background-image: linear-gradient(to right, rgba(8, 7, 7, 0), rgb(0, 0, 0)), url(/imagenes/1E3.jpg);
+      background-image: linear-gradient(to right, rgba(8, 7, 7, 0), rgb(0, 0, 0)), url(../imagenes/1E3.jpg);
       height: 800px;
       width: 100%;
       border: 2px solid black;
@@ -1038,7 +1038,7 @@ a{
     }
   /*NOSOTROS*/
   .sectionNosotros {
-    background-image: linear-gradient(to left, rgba(8, 7, 7, 0), black), url(/imagenes/1D.jpg);
+    background-image: linear-gradient(to left, rgba(8, 7, 7, 0), black), url(../imagenes/1D.jpg);
     height: 800px;
     width: 100%;
     border: 2px solid black;
@@ -1078,7 +1078,7 @@ a{
   /*SERVICIOS*/
   
   .mainServicios{
-    background-image: url(/imagenes/casa3.jfif);  
+    background-image: url(../imagenes/casa3.jfif);  
     display: grid;
   justify-items: center;
   align-items: center;
