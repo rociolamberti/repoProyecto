@@ -29,7 +29,7 @@ $azul: #36486b;
         font-size: 15px;
     }
     .header__nav .header__item a:hover{
-      background-color: $rosa;
+      background-color: $azul
   }
   
   .header__nav .header__item > li{
@@ -64,11 +64,9 @@ $azul: #36486b;
 
 
 
-.body{
-background-image: url(../imagenes/casa3editada.jfif);
-}
+
 body{
-  @include cuerpo(#f2ae72, 15px , 'Lato' )
+  @include cuerpo(black, 15px , 'Lato' )
   font-style: normal;
   font-weight: bolder;
   font-family: 'Prompt', sans-serif;
@@ -79,10 +77,18 @@ body{
 
 .card{
   background-color: #ceaa8ee3;
-  border-radius: 3px;
-  margin-bottom: 5px;
+  border-radius: 5px;
 }
-
+.row{
+   margin-bottom: 20px;
+   
+}
+.text-uppercase{
+  font-weight: bolder;
+}
+.text-black-50{
+  color: #0e0e0e!important;
+}
 /*INDEX*/
 
 header{
@@ -100,14 +106,14 @@ header{
   display: inline-block; 
 }
 
-.section{
+.sectionIndex{
   background-image: linear-gradient(to right, rgba(8, 7, 7, 0), rgb(0, 0, 0)), url(../imagenes/1E3.jpg);
   height: 800px;
   width: 100%;
   border: 2px solid black;
   margin-bottom: 2%;
 
-  .section__main{
+  .sectionIndex__main{
   width: 100%;
   font-size: 30px;
   text-align:center;
@@ -118,14 +124,15 @@ header{
   font-weight: bolder;
   font-family: 'Prompt', sans-serif;
 }
-.section__main h1{
+.sectionIndex__main h1{
   margin: 5%;
   color: $rosa;
   font-size: 40px;
   font-weight: bold;
+  font-weight: 600;
 }
 
-.section__main p{
+.sectionIndex__main p{
   margin: 5%;
   color: cornsilk;
 }
@@ -167,7 +174,7 @@ nav{
 }
 
 .barra li a:hover{
-  background-color: $rosa;
+  background-color: $azul
 }
 
 .barra > li{
@@ -183,6 +190,7 @@ nav{
 .barra li:hover > ul{
   display: block;
 }
+
 .img{
   width: 100%;
 }
@@ -193,13 +201,14 @@ h2 {
 /*NOSOTROS*/
 
 .sectionNosotros{
-background-image: linear-gradient(to left, rgba(8, 7, 7, 0), rgb(0, 0, 0)), url(../imagenes/1D.jpg);
+background-image: linear-gradient(to left, rgba(9, 9, 22, 0.685), rgba(0, 0, 0, 0.575)), url(../imagenes/1D.jpg);
 height: 800px;
 width: 100%;
 border: 2px solid black;
 margin-bottom: 2%;
 display: flex; 
-align-items: center;
+align-items: center; 
+
 
 .mainServicios__contenidoProducto{
   margin: 5px;
@@ -209,20 +218,21 @@ color: rgb(247, 240, 240);
 font-size: medium;
 text-align: justify;
 line-height: 1, 4rem;
-margin: 10px;
+margin: 30px;
+text-transform: uppercase;
+font-weight: bolder;
 }
 .sectionNosotros__titulo {
-color: rgb(255, 255, 255);
+color: $rosa;
 font-size: 3rem;
 text-align: center;
 padding: 1rem;
 margin-bottom:  10px;
+font-weight: 900;
 }
 
 
 #sectionNosotros__main{
-  background-color: rgba(7, 7, 7, 0.4);
-  border: 1px solid black;
   text-align: center;
   padding: 5%;
   margin: 2%;
@@ -240,25 +250,32 @@ margin-bottom:  10px;
 
 }
 
-main { 
+main {
   padding: 16px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background-color: rgba(7, 7, 7, 0.4);
-  border: 1px solid black;
+ 
 }
 /*SERVICIOS*/
 
 .mainServicios{
-background-image: url(../imagenes/casa3.jfif);
+background-image: url(../imagenes/RENDERRO.jpg);
 
+.mainServicios__tituloProductoUno{
+  color: $azul;
+  font-size: 40px;
+  text-align:center;
+  font-weight: bolder;
+}
 .mainServicios__tituloProducto{
 color: $azul;
 font-size: 30px;
 text-align:center;
 background-position: center center;
 background-size: cover;
+margin-bottom: 30px;
+
 }
 .mainServicios__contenedorCards{
 padding: 16px;
@@ -288,15 +305,95 @@ margin: 5px;
 }
 }
 
+/*TRABAJOS*/
+.imagenenFondo{
+    background-color: #606369;
+}
+.sectionTrabajos{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.cuadrosVideo{
+margin:1rem;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1em;
+  margin-left: 3%;
+}
+
+.location-listing {
+  position: relative;
+}
+
+.location-image {
+  line-height: 0;
+  overflow: hidden;
+}
+
+.location-image img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transform: scale(1.1);
+}
+
+.location-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s;
+  background: #36486b31;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-listing:hover .location-title {
+  opacity: 1;
+}
+
+.location-listing:hover .location-image img {
+  filter: blur(2px);
+}
+
+.tituloTrabajo{
+  margin: 2%;
+  color: black;
+  font-size: 40px;
+  font-weight: bolder;
+  text-align: center;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
 
 
 
 
 
 /*CONTACTO*/
-
+.body{
+background-image: url(../imagenes/2.jpg);
+background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
   .contact_form{  
-      background-color: #90939988;
+      background-color: #909399b2;
       width: 460px; 
       height: auto;
       margin: 80px auto;
@@ -408,7 +505,29 @@ margin: 5px;
       outline:0;
       border: 1px solid $rosa;
     }
-    
+    .formulario h1 h3{
+      font-weight: bolder;
+    }
+    .colocar_nombre{
+      font-weight: bolder;
+      font-size: 25px;
+    }
+    .colocar_email{
+      font-weight: bolder;
+      font-size: 25px;
+    }
+.colocar_telefono{
+  font-weight: bolder;
+  font-size: 25px;
+}
+.colocar_asunto{
+  font-weight: bolder;
+  font-size: 25px;
+}
+.colocar_mensaje{
+  font-weight: bolder;
+  font-size: 25px;
+}
   
 .videoRealidad{
   top: 30px;
@@ -420,87 +539,75 @@ margin: 5px;
 
 /*FOOTER*/
 footer{
-
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  background-color:  $azul;
-  width: 100%;
-}
-
-
-
-/*TRABAJOS*/
-
-.sectionTrabajos{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.cuadrosVideo{
-margin:1rem;
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 1em;
-  margin-left: 3%;
-}
-
-.location-listing {
-  position: relative;
-}
-
-.location-image {
-  line-height: 0;
-  overflow: hidden;
-}
-
-.location-image img {
-  filter: blur(0px);
-  transition: filter 0.3s ease-in;
-  transform: scale(1.1);
-}
-
-.location-title {
-  font-size: 1.5em;
-  font-weight: bold;
-  text-decoration: none;
-  z-index: 1;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
+  bottom: 0;
   left: 0;
-  opacity: 0;
-  transition: opacity .5s;
-  background: #36486b31;
-  color: white;
+  right: 0;
+  background: $azul;
+  height: auto;
+  width: 100vw;
+  padding-top: 40px;
+  color: $rosa;
+}
+.footerP{
+  color: #f2ae72;
+}
+.footer-content{
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.location-listing:hover .location-title {
-  opacity: 1;
-}
-
-.location-listing:hover .location-image img {
-  filter: blur(2px);
-}
-
-.tituloTrabajo{
-  margin: 5%;
-  color: $azul;
-  font-size: 40px;
-  font-weight: bold;
+  flex-direction: column;
   text-align: center;
 }
-a{
-  color: black;
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li{
+  margin: 0 10px;
+}
+.socials a{
   text-decoration: none;
+  color: #fff;
+}
+.socials a i{
+  font-size: 1.1rem;
+  transition: color .4s ease;
+
+}
+.socials a:hover i{
+  color: aqua;
+}
+
+.footer-bottom{
+  background: #000;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
 }
 
 
@@ -509,12 +616,9 @@ a{
 
 @media only screen and (min-width: 600px) and (max-width: 992px){
 
-.body{
-  background-image: url(../imagenes/casa3editada.jfif);
-}
 
 body{
-  @include cuerpo(#f2ae72, 15px , 'Lato' )
+  @include cuerpo(black, 15px , 'Lato' )
     font-style:normal;
     font-weight:bolder;
     font-family: 'Prompt', sans-serif;
@@ -537,14 +641,14 @@ body{
     display: inline-block; 
 }
 
-.section{
+.sectionIndex{
     background-image: linear-gradient(to right, rgba(8, 7, 7, 0), rgb(0, 0, 0)), url(../imagenes/1E3.jpg);
     height: 800px;
     width: 100%;
     border: 2px solid black;
     margin-bottom: 2%;
 
-    .section__main{
+    .sectionIndex__main{
     width: 100%;
     line-height: 35px;
     font-size: 30px;
@@ -556,14 +660,14 @@ body{
     font-weight: bolder;
     font-family: 'Prompt', sans-serif;
 }
-.section__main h1{
+.sectionIndex__main h1{
     margin: 5%;
     color: $rosa;
     font-size: 40px;
     font-weight: bold;
 }
 
-.section__main p{
+.sectionIndex__main p{
     margin: 5%;
     color: cornsilk;
 }
@@ -577,6 +681,20 @@ body{
     color: #242021;
     margin: 5%;
     font-weight: bold;
+}
+.card{
+  background-color: #ceaa8ee3;
+  border-radius: 5px;
+}
+.row{
+   margin-bottom: 20px;
+   
+}
+.text-uppercase{
+  font-weight: bolder;
+}
+.text-black-50{
+  color: #0e0e0e!important;
 }
 /*NAV*/
 
@@ -604,7 +722,7 @@ nav{
 }
 
 .barra li a:hover{
-    background-color: $rosa;
+    background-color: $azul;
 }
 
 .barra > li{
@@ -631,7 +749,7 @@ nav{
 
 /*NOSOTROS*/
 .sectionNosotros {
-  background-image: linear-gradient(to left, rgba(8, 7, 7, 0), black), url(../imagenes/1D.jpg);
+  background-image: linear-gradient(to left, rgba(9, 9, 22, 0.685), rgba(0, 0, 0, 0.575)), url(../imagenes/1D.jpg);
   height: 800px;
   width: 100%;
   border: 2px solid black;
@@ -662,13 +780,12 @@ nav{
     color: white;
     font-size: medium;
     text-align: center; }
-main {
+  main {
   padding: 16px;
   display: flex;
   flex-direction: column;
   justify-content: space-around; 
-  background-color: rgba(7, 7, 7, 0.4);
-  border: 1px solid black;}
+  }
 
   /*SERVICIOS*/
   
@@ -678,12 +795,20 @@ main {
     justify-items: center;
     align-items: center;
   
+    .mainServicios__tituloProductoUno{
+      color: $azul;
+      font-size: 40px;
+      text-align:center;
+      font-weight: bolder;
+    }
+    
     .mainServicios__tituloProducto{
     color: $azul;
     font-size: 30px;
     text-align:center;
     background-position: center center;
     background-size: cover;
+    font-weight: bolder;
   }
     .mainServicios__contenedorCards{
       display: grid;
@@ -707,10 +832,88 @@ main {
   }
   }
   
+/*TRABAJOS*/
 
+  .sectionTrabajos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+ 
+  }
+  
+.cuadrosVideo{
+  margin:1rem;
+}
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 1em;
+    margin: 40px;
+    justify-items: center;
+  }
+  
+  .location-listing {
+    position: relative;
+  }
+  
+  .location-image {
+    line-height: 0;
+    overflow: hidden;
+  }
+  
+  .location-image img {
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+    transform: scale(1.1);
+  }
+  
+  .location-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .5s;
+    background: #36486b31;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .location-listing:hover .location-title {
+    opacity: 1;
+  }
+  
+  .location-listing:hover .location-image img {
+    filter: blur(2px);
+  }
+
+.tituloTrabajo{
+    margin: 5%;
+    color: #36486b;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
 
 /*CONTACTO*/
-
+.body{
+  background-image: url(../imagenes/2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
     .contact_form{  
         background-color: #90939988;
         width: 460px; 
@@ -787,14 +990,15 @@ main {
         font-size: 39px;  
         text-align: center; 
         padding-bottom: 20px; 
-        color: black;
+        color: $azul;
       }
       
       
       h3{
         font-size: 16px; 
         padding-bottom: 30px;
-        color: #0e0e0e;   
+        color: #0e0e0e; 
+        font-weight: 900;  
       }
       
       
@@ -824,7 +1028,30 @@ main {
         outline:0;
         border: 1px solid $rosa;
       }
-      
+      .formulario h1 h3{
+        font-weight: bolder;
+      }
+      .colocar_nombre{
+        font-weight: bolder;
+        font-size: 25px;
+      }
+      .colocar_email{
+        font-weight: bolder;
+        font-size: 25px;
+      }
+  .colocar_telefono{
+    font-weight: bolder;
+    font-size: 25px;
+  }
+  .colocar_asunto{
+    font-weight: bolder;
+    font-size: 25px;
+  }
+  .colocar_mensaje{
+    font-weight: bolder;
+    font-size: 25px;
+  }
+    
     
 .videoRealidad{
     top: 30px;
@@ -836,97 +1063,84 @@ main {
 
 /*FOOTER*/
 footer{
-    margin-bottom: 1%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color:  $azul;
-    width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: $azul;
+  height: auto;
+  width: 100vw;
+  padding-top: 40px;
+  color: $rosa;
+}
+.footerP{
+  color: #f2ae72;
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li{
+  margin: 0 10px;
+}
+.socials a{
+  text-decoration: none;
+  color: #fff;
+}
+.socials a i{
+  font-size: 1.1rem;
+  transition: color .4s ease;
+
+}
+.socials a:hover i{
+  color: aqua;
 }
 
-
-
-  /*TRABAJOS*/
-
-  .sectionTrabajos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  
-.cuadrosVideo{
-  margin:1rem;
+.footer-bottom{
+  background: #000;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
 }
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 1em;
-    margin: 40px;
-  }
-  
-  .location-listing {
-    position: relative;
-  }
-  
-  .location-image {
-    line-height: 0;
-    overflow: hidden;
-  }
-  
-  .location-image img {
-    filter: blur(0px);
-    transition: filter 0.3s ease-in;
-    transform: scale(1.1);
-  }
-  
-  .location-title {
-    font-size: 1.5em;
-    font-weight: bold;
-    text-decoration: none;
-    z-index: 1;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity .5s;
-    background: #36486b31;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .location-listing:hover .location-title {
-    opacity: 1;
-  }
-  
-  .location-listing:hover .location-image img {
-    filter: blur(2px);
-  }
-
-.tituloTrabajo{
-    margin: 5%;
-    color: #36486b;
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
 }
-a{
-    color: black;
-    text-decoration: none;
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
 }
+  
 }
 
 @media only screen and ( max-width: 600px){
-  .body{
-    background-image: url(../imagenes/casa3editada.jfif);
-  }
+ 
   
   body{
-    @include cuerpo(#f2ae72, 15px , 'Lato' )
+    @include cuerpo(black, 15px , 'Lato' )
       font-style: normal;
       font-weight: bolder;
       font-family: 'Prompt', sans-serif;
@@ -951,14 +1165,14 @@ a{
       display: inline-block; 
   }
   
-  .section{
+  .sectionIndex{
       background-image: linear-gradient(to right, rgba(8, 7, 7, 0), rgb(0, 0, 0)), url(../imagenes/1E3.jpg);
       height: 800px;
       width: 100%;
       border: 2px solid black;
       margin-bottom: 2%;
   
-      .section__main{
+      .sectionIndex__main{
         width: 100%;
       font-size: 30px;
       text-align:center;
@@ -969,14 +1183,14 @@ a{
       font-weight: bolder;
       font-family: 'Prompt', sans-serif;
   }
-  .section__main h1{
+  .sectionIndex__main h1{
       margin: 5%;
       color: $rosa;
       font-size: 40px;
       font-weight: bold;
   }
   
-  .section__main p{
+  .sectionIndex__main p{
       margin: 5%;
       color: cornsilk;
       line-height : 35px;
@@ -992,6 +1206,20 @@ a{
       color: #242021;
       margin: 5%;
       font-weight: bold;
+  }
+  .card{
+    background-color: #ceaa8ee3;
+    border-radius: 5px;
+  }
+  .row{
+     margin-bottom: 20px;
+     
+  }
+  .text-uppercase{
+    font-weight: bolder;
+  }
+  .text-black-50{
+    color: #0e0e0e!important;
   }
   /*NAV*/
   
@@ -1019,7 +1247,7 @@ a{
   }
   
   .barra li a:hover{
-      background-color: $rosa;
+      background-color: $azul;
   }
   
   .barra > li{
@@ -1044,7 +1272,7 @@ a{
     }
   /*NOSOTROS*/
   .sectionNosotros {
-    background-image: linear-gradient(to left, rgba(8, 7, 7, 0), black), url(../imagenes/1D.jpg);
+    background-image: linear-gradient(to left, rgba(9, 9, 22, 0.685), rgba(0, 0, 0, 0.575)), url(../imagenes/1D.jpg);
     height: 800px;
     width: 100%;
     border: 2px solid black;
@@ -1088,17 +1316,25 @@ a{
     display: grid;
   justify-items: center;
   align-items: center;
-  
-    .mainServicios__tituloProducto{
-      color: $azul;
+  .mainServicios__tituloProductoUno{
+    color: $azul;
+    font-weight: bolder;
     font-size: 30px;
+    text-align: center;
+
+  }
+    .mainServicios__tituloProducto{
+    color: $azul;
+    font-weight: bolder;
+    font-size: 20px;
     text-align:center;
     background-position: center center;
     background-size: cover;
-    line-height : 25px;
+    
   }
     .mainServicios__contenedorCards{
       display: grid;
+      border-radius: 20px;
       grid-template-columns: 1fr;
           grid-template-areas: "articuloUno" "articuloTres" "articuloCinco" "articuloDos" "articuloCuatro" "producto";
   }
@@ -1111,22 +1347,124 @@ a{
     .mainServicios__cardProducto &__tituloProducto {
     padding-bottom: 8px;
     color: $rosa;
-
+line-height : 35px;
   }
     .mainServicios__contenidoProducto{
     font-size: 20px;
     text-decoration: none;
     line-height : 25px;
+    font-weight: bolder;
   }
   }
   
 
+   /*TRABAJOS*/
   
+    .sectionTrabajos{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    
+  .cuadrosVideo{
+    margin:1rem;
+  }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-gap: 1em;
+      margin: 25px;
+      justify-items: center;
+    }
+    
+    .location-listing {
+      position: relative;
+    }
+    
+    .location-image {
+      line-height: 0;
+      overflow: hidden;
+    }
+    
+    .location-image img {
+      filter: blur(0px);
+      transition: filter 0.3s ease-in;
+      transform: scale(1.1);
+    }
+    
+    .location-title {
+      font-size: 1.5em;
+      font-weight: bold;
+      text-decoration: none;
+      z-index: 1;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: opacity .5s;
+      background: #36486b31;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .location-listing:hover .location-title {
+      opacity: 1;
+    }
+    
+    .location-listing:hover .location-image img {
+      filter: blur(2px);
+    }
+  
+  .tituloTrabajo{
+      margin: 5%;
+      color: $azul;
+      font-size: 40px;
+      font-weight: bold;
+      text-align: center;
+  }
+  .formulario h1 h3{
+    font-weight: bolder;
+  }
+  .colocar_nombre{
+    font-weight: bolder;
+    font-size: 25px;
+  }
+  .colocar_email{
+    font-weight: bolder;
+    font-size: 25px;
+  }
+.colocar_telefono{
+font-weight: bolder;
+font-size: 25px;
+}
+.colocar_asunto{
+font-weight: bolder;
+font-size: 25px;
+}
+.colocar_mensaje{
+font-weight: bolder;
+font-size: 25px;
+}
+
+  a{
+      color: black;
+      text-decoration: none;
+  }
   
   
   
   /*CONTACTO*/
-  
+  .body{
+    background-image: url(../imagenes/2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
       .contact_form{  
           background-color: #90939988;
           width: 460px; 
@@ -1250,89 +1588,81 @@ a{
       border: 10;
   }
   
-  /*FOOTER*/
-  footer{
-      margin-bottom: 1%;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      background-color:  $azul;
-      width: 100%;
-  }
+/*FOOTER*/
+footer{
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: $azul;
+  height: auto;
+  width: 100vw;
+  padding-top: 40px;
+  color: $rosa;
+}
+.footerP{
+  color: #f2ae72;
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li{
+  margin: 0 10px;
+}
+.socials a{
+  text-decoration: none;
+  color: #fff;
+}
+.socials a i{
+  font-size: 1.1rem;
+  transition: color .4s ease;
+
+}
+.socials a:hover i{
+  color: aqua;
+}
+
+.footer-bottom{
+  background: #000;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
   
   
   
-    /*TRABAJOS*/
-  
-    .sectionTrabajos{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      flex-wrap: wrap;
-    }
-    
-  .cuadrosVideo{
-    margin:1rem;
-  }
-    .grid-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      grid-gap: 1em;
-      margin: 25px;
-    }
-    
-    .location-listing {
-      position: relative;
-    }
-    
-    .location-image {
-      line-height: 0;
-      overflow: hidden;
-    }
-    
-    .location-image img {
-      filter: blur(0px);
-      transition: filter 0.3s ease-in;
-      transform: scale(1.1);
-    }
-    
-    .location-title {
-      font-size: 1.5em;
-      font-weight: bold;
-      text-decoration: none;
-      z-index: 1;
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      top: 0;
-      left: 0;
-      opacity: 0;
-      transition: opacity .5s;
-      background: #36486b31;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    
-    .location-listing:hover .location-title {
-      opacity: 1;
-    }
-    
-    .location-listing:hover .location-image img {
-      filter: blur(2px);
-    }
-  
-  .tituloTrabajo{
-      margin: 5%;
-      color: $azul;
-      font-size: 40px;
-      font-weight: bold;
-      text-align: center;
-  }
-  a{
-      color: black;
-      text-decoration: none;
-  }
+   
   }
 
